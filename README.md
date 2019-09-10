@@ -34,13 +34,47 @@ In order to initilize and run the git, oepn the folder you jsut created, and typ
 	*	it will create an empty Git repository locally. The following message is displayed
 			** "Initialized empty Git repository in /Users/<userName>/git-102/.git" ** 
 
-Inorder to make the Git concept clear enough , we shoudl create a sample projet. The same project is an html project having a file
-index.html
+Inorder to make the Git concept clear enough , we should create a sample projet. The sample project has two file of html and css. The name of the files are as follow.
+# index.html 
+# style.css
+
+# git status 
+It shows the status of the branch. The message from the **git status** will tell you about what changes have been made on the branch, and not yet commited or untracked. It puts the files in color red or green.
+	**red  file**
+		colored files are those not tracket.
+		
+# git add 
+It is a command which will make the file to add to the respository. The applicaiton of the git add is as folloe
+	**git add "<fileName>"**	
+	Looking again  through a command **git status** will show the following message
+	On branch master
+
+	No commits yet
+
+		Changes to be committed:
+ 			 (use "git rm --cached <file>..." to unstage)
+
+		new file:   index.html
 
 
-	
-	
-	
-	
+# git rm --cached <fileName>"
+This is a command which is useful to unstage the change alreay added to the fiel from the latest git add. this will make the content to be one verion less from the last added feature.
+	rm 'index.html'
+	looking back again the git status , it will show the following result  
+	On branch master
+
+	No commits yet
+	Untracked files:
+ 		 (use "git add <file>..." to include in what will be committed)
+		index.html
+	nothing added to commit but untracked files present (use "git add" to track)
 	
 
+# git commit -m "message use a title of commit "
+This is a command used to commit the chnage already added to the local repository. The applciaiton of the command is as follow
+	**git commit -m "commit messge"**
+	[master (root-commit) 773db17] Add header
+ 	1 file changed, 10 insertions(+)
+ 	create mode 100644 index.html
+	
+	
