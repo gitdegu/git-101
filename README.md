@@ -31,12 +31,12 @@ Running the git
 In order to initilize and run the git, oepn the folder you jsut created, and type on the terminal the following command
 -	cd <folderName>
 -	git init
-	*	it will create an empty Git repository locally. The following message is displayed
+	it will create an empty Git repository locally. The following message is displayed
 			** "Initialized empty Git repository in /Users/<userName>/git-102/.git" ** 
 
 Inorder to make the Git concept clear enough , we should create a sample projet. The sample project has two file of html and css. The name of the files are as follow.
-# index.html 
-# style.css
+**index.html 
+**style.css
 
 # git status 
 It shows the status of the branch. The message from the **git status** will tell you about what changes have been made on the branch, and not yet commited or untracked. It puts the files in color red or green.
