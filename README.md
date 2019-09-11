@@ -155,7 +155,11 @@ This is a command used to list out all the created branches along with the maste
 # checking out branch
 This is a command used to checkout to the branch that the dev's created to do its parts. The command is applied as follow
 	**command
-		git checkout "branch_name"
+		git checkout branch_name
+# Creating and checking out branch
+This is a command used to create at the same time checking out. The command is applied as follow
+	git checkout -b branchName
+
 # Adding and Committing changes
 The same command is used to add as well as commit the change at local branch of the dev.
 	**git add "fileName"
@@ -198,6 +202,7 @@ This is a command used to merge the changes after seeing the difference. The com
 This is a command which has a purpose of deleting a branch. The developer ussually delete the branch that develped his work after the merge to the master branch. In order to delete the branch, the following command is used
 	**command
 		git branach -d branchName
+		git branch -D branchName //Alternatively, This is applied in the case the branch is not fully merged.
 		
 # Remote
 This is actuall a cloud place where different developers share their work and contribute together to accomplishe a certain development or application. The first step to create a remote is to go to git and create a respository.
@@ -220,6 +225,6 @@ This is a command used to check that whether i have a remote repository or not.
 		origin	https://github.com/gitdegu/git-102.git (push)
 # remove remote respository
 This is a sommand used to remove a remote repository.  The command is going to excusted as follow
-	git remote rm origin 
-
+	**git remote rm origin 
+# 
 	
