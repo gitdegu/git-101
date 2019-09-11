@@ -73,8 +73,153 @@ This is a command which is useful to unstage the change alreay added to the fiel
 # git commit -m "message use a title of commit "
 This is a command used to commit the chnage already added to the local repository. The applciaiton of the command is as follow
 	**git commit -m "commit messge"**
-	[master (root-commit) 773db17] Add header
- 	1 file changed, 10 insertions(+)
- 	create mode 100644 index.html
+		git commit -m "Add header"
+ 		1 file changed, 10 insertions(+)
+ 		create mode 100644 index.html
 	
+	looking back again the status git master, it will show a message as follow
+		git status
+		On branch master
+		nothing to commit, working tree clean
+	
+# git diff
+This is a command used to show the differences among the chnages made in the documents. the changes are laneeld with two color one with red and green. The red color is actually used to indicate thosconsidred to changed, and gree are considered as changes done.
+
+	git diff index.html 
+	diff --git a/index.html b/index.html
+	index 628f4e7..1164244 100644
+	--- a/index.html
+	+++ b/index.html
+	@@ -10,8 +10,8 @@
+     	<ul>
+        	 <li>Right</li>
+        	 <li>Left</li>
+	-        <li>Top</li>
+	-        <li>Bottom</li>
+	+        <li>Top_Right</li>
+	+        <li>Bottom_Right</li>
+     	</ul>
+ 	</body>
+ 	</html>
+# git checkout -- fileName
+This is a command used to reject or discard the changes happened to the documents. This will return the document status to the last poistion status before the changes happened. The applciation of the command is follow
+	git checkout -- index.html
+
+# git log 
+This is a commmand that could show a lost of commit made during the course of actions stating the author , the Date as well as the comments written along wi th the commit. The applicaiton of the command will as as follow
+	git log
+	commit d48403d3dd4fd3185043e7a89602ba12afdc2919 (HEAD -> master)
+	Author: userName <user_emal@domain.com>
+	Date:   Tue Sep 10 18:46:44 2019 +0200
+
+    adding a lists
+
+	commit 60765664be7b46cc6ea7831cddc670aca16a1b10
+	Author: userName <user_emal@domain.com>
+	Date:   Tue Sep 10 18:03:52 2019 +0200
+
+    color & font weight
+
+	commit 773db17ceb3c9574e1ab25926b7ca6bc13dea374
+	Author: userName <user_emal@domain.com>
+	Date:   Tue Sep 10 16:53:13 2019 +0200
+
+    Add header
+    
+# git lg
+This is also another command that could demonstrate all the commit including the commit message, date, author as part of each commit. The application of the commands are as follow
+	**command
+		git lg
+	**Outcome
+		* d48403d - (HEAD -> master) adding a lists (2 minutes ago) <userName>
+		* 6076566 - color & font weight (45 minutes ago) <userName>
+		* 773db17 - Add header (2 hours ago) <userName>
+
+# BRANCHING
+
+This is a feature supported in git and has a role of creating inline path along with the master. The inline path helps developers to do their work separatly and contribue their work to the master environment inorder to merge it.
+
+# Creating Branch
+In order to create a branch, there is a command 
+	**command
+		git branch "branch_name"
+
+# Listing out branching
+This is a command used to list out all the created branches along with the master branch.
+	**commands
+		git branch
+	**outcomee
+		branch-01-add-log
+		* master
+
+# checking out branch
+This is a command used to checkout to the branch that the dev's created to do its parts. The command is applied as follow
+	**command
+		git checkout "branch_name"
+# Adding and Committing changes
+The same command is used to add as well as commit the change at local branch of the dev.
+	**git add "fileName"
+	**git commit -m "commit_message"
+
+# Checking out master
+This is also the same command of checking out to any branch. The applicaiton of the command is as follow
+	**command
+	git checkout master
+#Looking the difference Master Verse Local branch
+This is a command used to check the difference between the branch committed verse the master branch
+	**command
+	git diff master branchName
+
+	git diff master branch-01-add-log
+		diff --git a/index.html b/index.html
+		index 628f4e7..b4a6ae0 100644
+		--- a/index.html
+		+++ b/index.html
+		@@ -10,8 +10,8 @@
+     <ul>
+         <li>Right</li>
+         <li>Left</li>
+-        <li>Top</li>
+-        <li>Bottom</li>
++        <li>Top-On</li>
++        <li>Bottom-Down</li>
+     </ul>
+ </body>
+ </html>
+ 	**Note , The - sign is refering those to be changes and The + are those to be added(changes made).
+	
+# Mergging the changes to the master
+This is a command used to merge the changes after seeing the difference. The command will be applied as follow
+	**command
+		git checkout master
+		git merger --no-ff branchName
+
+# Deleting a branch
+This is a command which has a purpose of deleting a branch. The developer ussually delete the branch that develped his work after the merge to the master branch. In order to delete the branch, the following command is used
+	**command
+		git branach -d branchName
+		
+# Remote
+This is actuall a cloud place where different developers share their work and contribute together to accomplishe a certain development or application. The first step to create a remote is to go to git and create a respository.
+
+# Checking a remote repository
+This is a command used to check that whether i have a remote repository or not.
+	**command
+		git remote -v
+	if there are remote repository already configured, a list of possible repository will be listed out as follow
+		origin	https://github.com/gitdegu/git-102.git (fetch)
+		origin	https://github.com/gitdegu/git-102.git (push)
+		
+# Creating a remote repository
+	Under a git reposotories section, Click the New button and provide the name of the repository.
+	1. Click on Create Repository
+	2. The following commands are useful to create a remote repository
+	3. git remote add origin https://github.com/gitdegu/-git-102_.git
+	4. applying the above command will show you the expected outcome "git remote -v"
+		origin	https://github.com/gitdegu/git-102.git (fetch)
+		origin	https://github.com/gitdegu/git-102.git (push)
+# remove remote respository
+This is a sommand used to remove a remote repository.  The command is going to excusted as follow
+	git remote rm origin 
+
 	
