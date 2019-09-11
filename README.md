@@ -227,8 +227,8 @@ This is a command used to check that whether i have a remote repository or not.
 This is a sommand used to remove a remote repository.  The command is going to excusted as follow
 	**git remote rm origin 
 # Pushing to a remote repository
-This is a command used to push a local master committed change to a remote master.
-	*git push -u origin master
+This is a command used to push a local master committed change to a remote master. the following are the outcome obtained after running the git push -u origin master
+	
 	*Enumerating objects: 43, done.
 	Counting objects: 100% (43/43), done.
 	Delta compression using up to 4 threads
