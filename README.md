@@ -31,7 +31,7 @@ it will show you the installed version of the git. Example : - git version 2.22.
 In order to begin using the git, the first thing that we shoudl do is  creating a folder using the command mkdir <folderName>
 	Example : - mkdir git-102
 	
-Running the git
+# Running the git
 In order to initilize and run the git, oepn the folder you jsut created, and type on the terminal the following command
 -	cd <folderName>
 -	git init
@@ -47,7 +47,7 @@ It shows the status of the branch. The message from the **git status** will tell
 	**red  file**
 		colored files are those not tracket.
 		
-# git add 
+# git add fileName
 It is a command which will make the file to add to the respository. The applicaiton of the git add is as folloe
 	**git add "<fileName>"**	
 	Looking again  through a command **git status** will show the following message
@@ -86,7 +86,7 @@ This is a command used to commit the chnage already added to the local repositor
 		On branch master
 		nothing to commit, working tree clean
 	
-# git diff
+# git diff master branchName
 This is a command used to show the differences among the chnages made in the documents. the changes are laneeld with two color one with red and green. The red color is actually used to indicate thosconsidred to changed, and gree are considered as changes done.
 
 	git diff index.html 
@@ -136,16 +136,16 @@ This is also another command that could demonstrate all the commit including the
 		* 6076566 - color & font weight (45 minutes ago) <userName>
 		* 773db17 - Add header (2 hours ago) <userName>
 
-# BRANCHING
+# What is Branching?
 
 This is a feature supported in git and has a role of creating inline path along with the master. The inline path helps developers to do their work separatly and contribue their work to the master environment inorder to merge it.
 
-# Creating Branch
+# Creating Branch - git branch branchName
 In order to create a branch, there is a command 
 	**command
 		git branch "branch_name"
 
-# Listing out branching
+# Listing out branching - git branch
 This is a command used to list out all the created branches along with the master branch.
 	**commands
 		git branch
@@ -153,11 +153,12 @@ This is a command used to list out all the created branches along with the maste
 		branch-01-add-log
 		* master
 
-# checking out branch
+# checking out branch - git checkout branchName
 This is a command used to checkout to the branch that the dev's created to do its parts. The command is applied as follow
 	**command
-		git checkout branch_name
-# Creating and checking out branch
+		git checkout branchName
+		
+# Creating and checking out branch - git checkout -b branchName
 This is a command used to create at the same time checking out. The command is applied as follow
 	git checkout -b branchName
 
@@ -166,7 +167,7 @@ The same command is used to add as well as commit the change at local branch of 
 	**git add "fileName"
 	**git commit -m "commit_message"
 
-# Checking out master
+# Checking out master - git checkout master
 This is also the same command of checking out to any branch. The applicaiton of the command is as follow
 	**command
 	git checkout master
@@ -199,16 +200,16 @@ This is a command used to merge the changes after seeing the difference. The com
 		git checkout master
 		git merger --no-ff branchName
 
-# Deleting a branch
+# Deleting a branch - git branch -d branchName
 This is a command which has a purpose of deleting a branch. The developer ussually delete the branch that develped his work after the merge to the master branch. In order to delete the branch, the following command is used
 	**command
 		git branach -d branchName
 		git branch -D branchName //Alternatively, This is applied in the case the branch is not fully merged.
 		
-# Remote
+# Waht is Remote 
 This is actuall a cloud place where different developers share their work and contribute together to accomplishe a certain development or application. The first step to create a remote is to go to git and create a respository.
 
-# Checking a remote repository
+# Checking a remote repository - git remove -v
 This is a command used to check that whether i have a remote repository or not.
 	**command
 		git remote -v
@@ -224,11 +225,12 @@ This is a command used to check that whether i have a remote repository or not.
 	4. applying the above command will show you the expected outcome "git remote -v"
 		origin	https://github.com/gitdegu/git-102.git (fetch)
 		origin	https://github.com/gitdegu/git-102.git (push)
-# Remove remote respository
+	
+# Remove remote respository - git remote rm origin
 This is a sommand used to remove a remote repository.  The command is going to excusted as follow
 	**git remote rm origin 
 	
-# Pushing to a remote repository
+# Pushing to a remote repository - git push -u origin master
 This is a command used to push a local master committed change to a remote master. the following are the outcome obtained after running the 
 	git push -u origin master
 	
