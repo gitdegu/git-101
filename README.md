@@ -1,8 +1,7 @@
 # git-101
 
 # Introduction
-This is a resource mainly targeting to provide over all and general aspects of the git. The topic covers downlaoding, installtion, 
-and working environment of git, and its related commands that could let the user to work with a version management operation.
+This is a resource mainly targeting to provide over all and general aspects of the git. The topic covers downlaoding, installtion, and working environment of git, and its related commands that could let the user to work with a version management operation.
 
 # What is Git? 
 -	It is a platform that could let a certain resource to be distributee across different people takig their won versions.
@@ -14,6 +13,11 @@ and working environment of git, and its related commands that could let the user
 # Installtion of git
 git can be downlaoded from the efollowing link  as per the kind of operating system you have
 https://git-scm.com/downloads
+
+# Configuration of git
+This is a step to perform a configuration of git. The configuration is actually made providing the following information
+	git config --gloabl user.name "userName "
+	git config --gloabl user.email "userEmail@domainName.com"
 
 # Already installed git 
 The following link will provide the latest developmen verison for the git itself. Run the following command on the terminal
@@ -113,13 +117,10 @@ This is a commmand that could show a lost of commit made during the course of ac
 	Date:   Tue Sep 10 18:46:44 2019 +0200
 
     adding a lists
-
 	commit 60765664be7b46cc6ea7831cddc670aca16a1b10
 	Author: userName <user_emal@domain.com>
 	Date:   Tue Sep 10 18:03:52 2019 +0200
-
     color & font weight
-
 	commit 773db17ceb3c9574e1ab25926b7ca6bc13dea374
 	Author: userName <user_emal@domain.com>
 	Date:   Tue Sep 10 16:53:13 2019 +0200
@@ -223,21 +224,23 @@ This is a command used to check that whether i have a remote repository or not.
 	4. applying the above command will show you the expected outcome "git remote -v"
 		origin	https://github.com/gitdegu/git-102.git (fetch)
 		origin	https://github.com/gitdegu/git-102.git (push)
-# remove remote respository
+# Remove remote respository
 This is a sommand used to remove a remote repository.  The command is going to excusted as follow
 	**git remote rm origin 
-# Pushing to a remote repository
-This is a command used to push a local master committed change to a remote master. the following are the outcome obtained after running the git push -u origin master
 	
-	*Enumerating objects: 43, done.
-	Counting objects: 100% (43/43), done.
-	Delta compression using up to 4 threads
-	Compressing objects: 100% (41/41), done.
-	Writing objects: 100% (43/43), 10.17 KiB | 1.69 MiB/s, done.
-	Total 43 (delta 12), reused 0 (delta 0)
-	remote: Resolving deltas: 100% (12/12), done.
-	To https://github.com/gitdegu/git-102.git
-	 * [new branch]      master -> master
-	Branch 'master' set up to track remote branch 'master' from 'origin'.
+# Pushing to a remote repository
+This is a command used to push a local master committed change to a remote master. the following are the outcome obtained after running the 
+	git push -u origin master
+	
+		Enumerating objects: 43, done.
+		Counting objects: 100% (43/43), done.
+		Delta compression using up to 4 threads
+		Compressing objects: 100% (41/41), done.
+		Writing objects: 100% (43/43), 10.17 KiB | 1.69 MiB/s, done.
+		Total 43 (delta 12), reused 0 (delta 0)
+		remote: Resolving deltas: 100% (12/12), done.
+		To https://github.com/gitdegu/git-102.git
+		 * [new branch]      master -> master
+		Branch 'master' set up to track remote branch 'master' from 'origin'.
 
-	
+
