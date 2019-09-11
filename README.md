@@ -228,8 +228,8 @@ This is a sommand used to remove a remote repository.  The command is going to e
 	**git remote rm origin 
 # Pushing to a remote repository
 This is a command used to push a local master committed change to a remote master.
-	git push -u origin master
-	Enumerating objects: 43, done.
+	*git push -u origin master
+	*Enumerating objects: 43, done.
 	Counting objects: 100% (43/43), done.
 	Delta compression using up to 4 threads
 	Compressing objects: 100% (41/41), done.
