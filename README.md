@@ -226,5 +226,18 @@ This is a command used to check that whether i have a remote repository or not.
 # remove remote respository
 This is a sommand used to remove a remote repository.  The command is going to excusted as follow
 	**git remote rm origin 
-# 
+# Pushing to a remote repository
+This is a command used to push a local master committed change to a remote master.
+	git push -u origin master
+	Enumerating objects: 43, done.
+	Counting objects: 100% (43/43), done.
+	Delta compression using up to 4 threads
+	Compressing objects: 100% (41/41), done.
+	Writing objects: 100% (43/43), 10.17 KiB | 1.69 MiB/s, done.
+	Total 43 (delta 12), reused 0 (delta 0)
+	remote: Resolving deltas: 100% (12/12), done.
+	To https://github.com/gitdegu/git-102.git
+	 * [new branch]      master -> master
+	Branch 'master' set up to track remote branch 'master' from 'origin'.
+
 	
