@@ -182,12 +182,12 @@ This is a command used to check the difference between the branch committed vers
 		+++ b/index.html
 		@@ -10,8 +10,8 @@
      <ul>
-         <li>Right</li>
-         <li>Left</li>
--        <li>Top</li>
--        <li>Bottom</li>
-+        <li>Top-On</li>
-+        <li>Bottom-Down</li>
+       	 	<li>Right</li>
+        	 <li>Left</li>
+	-        <li>Top</li>
+	-        <li>Bottom</li>
+	+        <li>Top-On</li>
+	+        <li>Bottom-Down</li>
      </ul>
  </body>
  </html>
